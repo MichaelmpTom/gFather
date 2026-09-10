@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+  
+  <title>Tom_HTML_4</title>
+</head>
+<body>
+  
+  <div id="logo">
+    <img id="hlogo" src="assets/images/gflogot350.png" alt="Godfather logo">
+  </div>
+  <nav>
+    <a href="#story" title="story"></a>
+    <a href="#cast" title="cast"></a>
+    <a href="#prod" title="production"></a>
+    <a href="#legacy" title="legacy"></a>
+    <a href="#con" title="contact"></a>
+  </nav>
+  <div id="hamburger" onclick="toggleMenu();">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <div id="menu">
+    <a href="#story" title="story" onclick="toggleMenu();">Story</a>
+    <a href="#cast" title="cast" onclick="toggleMenu();">Cast</a>
+    <a href="#prod" title="production" onclick="toggleMenu();">Production</a>
+    <a href="#legacy" title="legacy" onclick="toggleMenu();">Legacy</a>
+    <a href="#contact" title="contact" onclick="toggleMenu();">Contact</a>
+  </div>
+
+  <div id="grid">
+    <header></header>
+    <div id="story">
+      <img id="famone" src="assets/images/famone.png" alt="Family">
+     <div><p>The Godfather follows the powerful Corleone crime family in post-WWII America. Don Vito Corleone, the respected and feared patriarch, oversees a vast criminal empire. When he refuses to enter the narcotics business, rival gangs attempt to assassinate him, plunging the family into war.
+      Vito’s hotheaded eldest son, Sonny, leads the retaliation, while his youngest, Michael, a war hero initially uninvolved in crime, is reluctantly drawn in. After an assassination attempt on his father, Michael kills a rival boss and a corrupt police captain, forcing him to flee to Sicily. While in exile, he marries a local woman, but she is killed in a car bombing meant for him.
+     Back in New York, Sonny is ambushed and brutally murdered. Vito, recovering from his wounds, brokers a fragile peace among the crime families. When Michael returns, he takes control of the Corleone empire, marrying his old love, Kay.
+      Vito dies of a heart attack, and Michael ruthlessly consolidates power. He orchestrates the murder of all enemies, including a treacherous brother-in-law, Carlo, who helped set up Sonny’s killing. In the final moments, Michael denies Kay’s desperate question about his involvement in the murders, as his men close the door on her, signifying his full transformation into the new Godfather.
+      The film portrays themes of power, loyalty, betrayal, and the inescapable nature of destiny, as Michael, once determined to be different, ultimately becomes even more ruthless than his father.</p>
+    </div>
+    </div>
+    <div id="cast">
+      <img src="assets/images/v7.png" alt="Dom Vito" class="actors">
+      <img src="assets/images/m23.png" alt="Michael" class="actors">
+      <img src="assets/images/s17.png" alt="Sonny" class="actors">
+      <img src="assets/images/f3.png" alt="Fredo" class="actors">
+      <img src="assets/images/c3.png" alt="Connie" class="actors">
+      <img src="assets/images/t12.png" alt="Tom" class="actors">
+    </div>
+    <div id="production">
+      <img src="assets/images/onset3.png" alt="On Set" class="onset">
+      <img src="assets/images/onset13.png" alt="On Set3" class="onset">
+    </div>
+      <div id="legacy">
+        <p>The problems with production on the 1971 set of The Godfather would require a textbook to compile. And given the timeless and hailed final product, it is truly a wonder that it was ever made. these are some of the issues encountered while filming: Paramount Pictures initially had reservations about casting Al Pacino and Marlon Brando, and nearly fired Francis Ford Coppola as director. The studio demanded repayment of development money for projects it had rejected, leading to financial instability for the production team. Brando put up a million-dollar bond to ensure he wouldn't cause problems. The Italian-American Civil Rights League, led by mobster Joseph Colombo, protested the film, fearing it would reinforce negative stereotypes of Italian-Americans. Producer Al Ruddy brokered a truce with Colombo, agreeing to remove the word "Mafia" and make other concessions. Studio executives initially opposed casting Marlon Brando as Don Corleone and Al Pacino as Michael, fearing their box office appeal. Francis Ford Coppola, the director, had to advocate strongly for Pacino, and the studio agreed only under the condition that James Caan play Sonny Corleone instead. Francis Ford Coppola nearly got fired several times during filming. He also reportedly made other actors wear his lines, and they said they couldn't understand what he was saying. <br><br><br> The enduring legacy of The Godfather is due to how the story reflects American values in the post-industrial revolution. The "family" as it is often referred to, is both the internal(the nuclear family), and the external(the gang).
+        The protaganist must negotiate both.
+        The father's three sons are the three aspects of his character - brutality, empathy, and intelligence. And the fathers success in both of his families, is due to his ability to balance these three aspects.
+        The brutality of business in the corporate world, the shrewdness of manipulation, and the true concern required to protect the family from encroaching threats, are the makeup of the father.
+        The son of brutality, Sonny, dies by the sword. The son of empathy, Fredo, dies from not undestanding, and the son of intelligence, Michael, rises in an intellectual furor that has him killing enemies, friends, and family; all because it made sense to do so.
+        </p>
+      </div>
+      <div id="contact">
+        <form id="feedbackForm">
+          <input id="username" type="text" placeholder="enter your name" aria-label="username"><br>
+          <input id="password" type="email" placeholder="enter your email" aria-label="password"><br>
+          <textarea name="message" id="message" cols="30" rows="7" maxlength="200" 
+            placeholder="please type message here, and have a great day &hearts;" aria-label="message"></textarea><br>
+          <input type="submit" id="submit" value="Send Message">
+      </form>
+    </div>
+    <footer>
+      <div id="flogo">
+        <img src="assets/images/gflogo2.png" alt="Footer Logo" id="footlogo">
+      </div>
+      <div id="cright">
+        <p>&copy2025 Paramount Pictures<br> All rights reserved</p>
+      </div>
+      <div id="socmed">
+        <img src="assets/icons/fbook.png" alt="Facebook Icon" class="sMed">
+        <img src="assets/icons/ingram.png" alt="Instagram Icon" class="sMed">
+        <img src="assets/icons/twitter.png" alt="Twitter Icon" class="sMed">
+      </div>
+    </footer>
+  <script src="scripts/jquery.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
